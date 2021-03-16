@@ -7,6 +7,7 @@ package secp256k1
 
 /*
 #cgo CFLAGS: -I./libsecp256k1
+#cgo CFLAGS: -I./libsecp256k1/include/
 #cgo CFLAGS: -I./libsecp256k1/src/
 
 #ifdef __SIZEOF_INT128__
