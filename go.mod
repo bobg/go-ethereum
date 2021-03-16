@@ -1,4 +1,4 @@
-module github.com/bobg/go-ethereum
+module github.com/ethereum/go-ethereum
 
 go 1.13
 

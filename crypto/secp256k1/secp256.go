@@ -7,7 +7,6 @@ package secp256k1
 
 /*
 #cgo CFLAGS: -I./libsecp256k1
-#cgo CFLAGS: -I./libsecp256k1/include/
 #cgo CFLAGS: -I./libsecp256k1/src/
 
 #ifdef __SIZEOF_INT128__
@@ -24,9 +23,9 @@ package secp256k1
 #define USE_FIELD_INV_BUILTIN
 #define USE_SCALAR_INV_BUILTIN
 #define NDEBUG
-#include "secp256k1.c"
-#include "modules/recovery/main_impl.h"
-#include "ext.h"
+#include "crypto/secp256k1/libsecp256k1/src/secp256k1.c"
+#include "crypto/secp256k1/libsecp256k1/src/modules/recovery/main_impl.h"
+#include "crypto/secp256k1/ext.h"
 
 typedef void (*callbackFunc) (const char* msg, void* data);
 extern void secp256k1GoPanicIllegal(const char* msg, void* data);
